@@ -1,0 +1,26 @@
+.quote{
+	padding: 25px 125px 30px 125px;
+	font-size: 20px;
+	text-align: center;
+	letter-spacing: 1px;
+	position: relative;
+	&:before{
+		position: absolute;
+		top: 17px;
+		left: 80px;
+		width: 38px;
+		height: 32px;
+		content: "";
+		background: url(../image/quotes.png) no-repeat;
+	}
+	&:after{
+		position: absolute;
+		bottom: 0px;
+		right: 80px;
+		width: 38px;
+		height: 32px;
+		content: "";
+		background: url(../image/quotes.png) no-repeat;
+		background-position: -38px 0px;
+	}
+}

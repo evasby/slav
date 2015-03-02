@@ -1,0 +1,81 @@
+.header{
+  background: url(../image/header.jpg) no-repeat;
+  //background-size: 100%;
+  background-size: 1920px;
+  background-position:  center bottom;
+  //height: 563px;
+  //width: 100%;
+  position: relative;
+  z-index: 2;
+  &_top{
+    overflow: hidden;
+    padding: 30px 0px 370px 0px;
+    @include respond(1280){
+      padding-bottom: 340px;
+      padding-top: 10px;
+    }
+  }
+  &_slang{
+    padding-top: 20px;
+    width: 290px;
+    float: left;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 1.2;
+    //font-weight: bold;
+    span{
+      display: block;
+      padding-top: 20px;
+      color: #c4a07e;
+      @include respond(1280){
+        padding-top: 7px;
+      }
+    }
+  }
+  &_logo{
+    width: 241px;
+    float: left;
+    margin-left: 70px;
+  }
+  &_link{
+    display: block;
+    max-width: 241px;
+    height: 180px;
+    //margin: 0 auto;
+    background: url(../image/logo.png) no-repeat;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+  }
+  &_phone{
+    padding-top: 20px;
+    width: 180px;
+    float: left;
+    margin-left: 130px;
+    color: #ffffff;
+    text-transform: uppercase;
+    //font-weight: bold;
+    line-height: 1.2;
+    position: relative;
+    span{
+      display: block;
+      width: 19px;
+      height: 18px;
+      position: absolute;
+      background: url(../image/icons.png);
+      background-position: -57px 0;
+      bottom: 1px;
+      left: -6px
+    }
+    a{
+      display: block;
+      padding: 20px 0px 0px 15px;
+      color: #c4a07e;
+      @include def-link-colors(#c4a07e, #c4a07e, #c4a07e, #c4a07e, #c4a07e);
+      text-decoration: none;
+      @include respond(1280){
+        padding-top: 7px;
+      }
+    }
+  }
+}

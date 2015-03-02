@@ -1,0 +1,26 @@
+.gallery{
+	overflow: hidden;
+	padding: 30px 0px 30px 15px;
+	&_item{
+		width: 194px;
+		height: 121px;
+		background: url(../image/view.png) #49352a no-repeat;
+		background-position: 50% 50%;
+		//background-color: #49352a;
+		float: left;
+		margin-right: 25px;
+		img{
+			display: block;
+			width: 100%;
+			height: auto;
+			@include def-transition(opacity, 0.3s);
+			&:hover{
+				opacity: 0.4;
+				cursor: pointer;
+			}
+		}
+		&:last-child{
+			margin-right: 0px;
+		}
+	}
+}

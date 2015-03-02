@@ -1,0 +1,17 @@
+.title{
+  overflow: hidden;
+  h1{
+    float: left;
+    color: #523322;
+    font-size: 27px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-right: 22px;
+  }
+  &_border{
+    border-bottom: 1px solid #523322;
+    overflow: hidden;
+    padding-top: 24px;
+    margin-right: 15px;
+  }
+}
