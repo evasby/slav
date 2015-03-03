@@ -1,0 +1,42 @@
+.news{
+  padding: 0px 0px 0px 5px;
+  &_item{
+    margin-bottom: 68px;
+  }
+  &_title{
+    margin-bottom: 10px;
+    max-width: 660px;
+    a{
+      @include def-link-colors(#533423, #533423, #533423, #533423, #533423);
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 22px;
+      font-weight: bold;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  &_wrap{
+    overflow: hidden;
+  }
+  &_image{
+    float: left;
+    width: 192px;
+    height: 120px;
+  }
+  &_text{
+    float: left;
+    max-width: 630px;
+    padding: 7px 0px 0px 40px;
+  }
+  &_date{
+    font-size: 12px;
+    color: #81817e;
+  }
+  &_body{
+    font-size: 17px;
+    color: #231f20;
+    padding: 15px 0px 15px 0px;
+  }
+}

@@ -1,0 +1,28 @@
+.partners{
+  padding: 27px 0px 0px 12px;
+  &_item{
+    overflow: hidden;
+    margin-bottom: 18px;
+  }
+  &_image{
+    float: left;
+    width: 195px;
+    height: 93px;
+  }
+  &_text{
+    float: left;
+    max-width: 660px;
+    padding: 20px 0px 0px 18px;
+  }
+  &_title{
+    color: #4d4d4d;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &_descr{
+    color: #4d4d4d;
+    font-size: 17px;
+    padding: 8px 0px 0px 0px;
+  }
+}

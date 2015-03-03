@@ -1,0 +1,23 @@
+.mypager{
+  .news &{
+    margin: -9px 0px 0px 0px;
+    padding-bottom: 76px;
+  }
+  &_item{
+    color: #ffffff;
+    display: inline-block;
+    font-size: 14px;
+    padding: 0px 4px 0px 4px;
+    &__current{
+      background-color: #523322;
+    }
+    a{
+      @include def-link-colors(#523322, #523322, #523322, #523322, #523322);
+      font-size: 14px;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}

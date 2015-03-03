@@ -56,7 +56,8 @@ module.exports = function(grunt) {
                 },
                 //src: ['css/all.css', 'css/all-old-ie.css', 'css/all.css.map', 'css/all-old-ie.css.map'],
                 src: ['css/all.css', 'css/all-old-ie.css'],
-                dest: 'www/slav.webformat.by/sites/all/themes/slav/css',
+                //dest: 'www/slav.webformat.by/sites/all/themes/slav/css',
+                dest: 'www/slav.webformat.by/css',
                 exclusions: ['css/**/.DS_Store', 'css/**/Thumbs.db', 'dist/tmp']
             }
         },

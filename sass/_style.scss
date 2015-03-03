@@ -27,8 +27,19 @@ body{
   color: #523322;
   line-height: 1.2;
 }
+a{
+  font-size: 13px;
+  @include def-link-colors(#81817e, #523322, #81817e, #81817e, #81817e);
+}
 p{
   margin-bottom: 19px;
+}
+b, strong{
+  font-weight: bold;
+}
+img{
+  width: 100%;
+  height: auto;
 }
 .inner{
   max-width: 960px;
@@ -38,12 +49,31 @@ p{
     min-width: 960px;
   }
 }
+button{
+  display: block;
+  border: none;
+  width: 147px;
+  height: 31px;
+  background-color: #523322;
+  color: #f1ead8;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  &:hover{
+    cursor: pointer;
+  }
+}
 /**********************************************************/
 /**********************************************************/
+@import "breadcrumb";
 @import "title";
 @import "header";
 @import "menu";
+@import "news";
+@import "partners";
+@import "how";
 @import "article";
+@import "mypager";
 @import "slider";
 @import "gallery";
 @import "quote";

@@ -64,41 +64,47 @@
     </div>
   </header>
   <div class="inner">
-    <article class="article">
-      <div class="slider">
-        <img src="image/slide1.jpg" alt="">
-        <div class="slider_text">
-          <h1>Акция</h1>
-          <p>Приглашаем всех желающих принять участие в презентации нашего гостиничного комплекса «Меркур». Презентация состоится 01.02.2015 года,  с 9-00 до 16-00 в апартотеле «Комфорт» по адресу г.Минск, ул.Щорса, д.1, 3 й этаж. </p>
-          <p>Звоните, ответим на все вопросы 8-029-658-62-58,8-017-289-18-90</p>
+    <div class="article">
+      <div class="breadcrumb">
+        <a class="breadcrumb_link" href="/">Главная</a>
+        <span class="breadcrumb_item">Новости</span>
+      </div>
+      <div class="news">
+        <div class="news_item">
+          <div class="news_title"><a href="#">Началась продажа административных и торговых помещений в гостиничном комплексе «МЕРУР»!</a></div>
+          <div class="news_wrap">
+            <div class="news_image"><img src="image/news1.jpg" alt=""></div>
+            <div class="news_text">
+              <div class="news_date">17 февраля 19:45</div>
+              <div class="news_body">Краткое описание новости про то, что началась продажа административных и торговых помещений в гостиничном комплексе «МЕРУР».</div>
+              <div class="news_link"><a href="#">Подробнее>></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="news_item">
+          <div class="news_title"><a href="#">Внимание! Предлагаем торговое помещение с отдельным выходом на ул. Торговая.</a></div>
+          <div class="news_wrap">
+            <div class="news_image"><img src="image/news2.jpg" alt=""></div>
+            <div class="news_text">
+              <div class="news_date">17 февраля 19:45</div>
+              <div class="news_body">Краткое описание новости про то, что началась продажа торговых помещений с тдельным выходом на ул. Торговая.</div>
+              <div class="news_link"><a href="#">Подробнее>></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="mypager">
+          <ul class="pager mypager_list">
+            <li class="mypager_item mypager_item__first"><a href="">В начало</a></li>
+            <li class="mypager_item mypager-prev"><a href="">Назад</a></li>
+            <li class="mypager_item mypager_item__current">1</li>
+            <li class="mypager_item"><a href="">2</a></li>
+            <li class="mypager_item"><a href="">3</a></li>
+            <li class="mypager_item mypager-next"><a href="">Вперёд</a></li>
+            <li class="mypager_item mypager_item__last"><a href="">В конец</a></li>
+          </ul>
         </div>
       </div>
-      <div class="title">
-        <h1>Компания "Славичи"</h1>
-        <div class="title_border"></div>
-      </div>
-      <div class="article_text">
-        <p>Инвестиционная компания “Славичи” ведет строительство гостиницы “MERCURE”**** с фитнес-центром, рестораном, баром на улице Торговой вдоль набережной реки Свислочь. Проектом также предусмотрено наличие торговых и административных помещений.</p>
-        <p>В наше время “Верхний город” и современная улица Торговая, как и в 18 веке до сих пор остается кварталом ярких людей. которые всегда были и остаются в центре красивой жизни</p>
-      </div>
-      <div class="gallery">
-        <div class="gallery_item">
-          <img src="image/1.jpg" alt="">
-        </div>
-        <div class="gallery_item">
-          <img src="image/2.jpg" alt="">
-        </div>
-        <div class="gallery_item">
-          <img src="image/3.jpg" alt="">
-        </div>
-        <div class="gallery_item">
-          <img src="image/4.jpg" alt="">
-        </div>
-      </div>
-      <div class="quote">
-        Создавая наш проект, мы решили, что у Вас тоже обязательно должен быть офис в центре событий, где виды вдохновляют опережая время. Офис, где хочется работать и днем, и ночью.<br>Мы с любовью и гордостью проектируем и строим НАШ квартал.<br>Мы работаем тоже в самом центре Минска.<br>Поэтому предлагаем и Вам присоединиться к нам, для того чтобы продолжать традиции роскошной жизни и развивать свой бизнес создавая будущее!
-      </div>
-    </article>
+    </div>
   </div>
   <footer class="footer">
     <div class="footer_top">

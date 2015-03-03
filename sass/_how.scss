@@ -1,0 +1,16 @@
+.how{
+  overflow: hidden;
+  padding-bottom: 96px;
+  &_image{
+    width: 339px;
+    height: 226px;
+    float: right;
+  }
+  &_text{
+    max-width: 520px;
+    padding: 35px 0px 0px 0px;
+  }
+  p{
+    margin-bottom: 29px;
+  }
+}
