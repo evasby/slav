@@ -31,7 +31,7 @@
             <a href="/" class="menu_link">Главная</a>
           </li>
           <li class="menu_item">
-            <a href="/" class="menu_link">О компании</a>
+            <a href="about.php" class="menu_link">О компании</a>
           </li>
           <li class="menu_item">
             <a href="/" class="menu_link">Продажа офисов и торговых площадей</a>
@@ -57,7 +57,7 @@
             <a href="news.php" class="menu_link">Новости</a>
           </li>
           <li class="menu_item">
-            <a href="/" class="menu_link">Контакты</a>
+            <a href="contacts.php" class="menu_link">Контакты</a>
           </li>
         </ul>
       </nav>

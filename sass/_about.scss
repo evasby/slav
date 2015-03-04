@@ -1,0 +1,36 @@
+.about{
+  &_descr{
+    padding: 35px 0px 60px 0px;
+  }
+  &_title{
+    font-family: frankcond, sans-serif;
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+  &_item{
+    margin-bottom: 60px;
+  }
+  &_photo{
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  &_image{
+    width: 241px;
+    height: 144px;
+    float: left;
+  }
+  &_imagedescr{
+    max-width: 590px;
+    float: left;
+    padding: 5px 0px 0px 30px;
+  }
+  ul{
+    list-style-type: square;
+    overflow: hidden;
+  }
+  li{
+    float: left;
+    margin-left: 100px;
+    width: 80px;
+  }
+}

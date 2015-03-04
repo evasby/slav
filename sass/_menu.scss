@@ -1,16 +1,18 @@
 .menu {
   //padding: 0px 0px 0px 0px;
   padding: 0px 28px 0px 28px;
+  height: 42px;
   background-color: #523322;
   &_list{
     display: table;
     width: 100%;
-    
+    list-style-type: none;
 
     &__l2{
+      list-style-type: none;
       background-color: #a48157;
       position: absolute;
-      top: 37px;
+      top: 42px;
       left: 0px;
       opacity: 0;
       visibility: hidden;
@@ -30,7 +32,6 @@
     &__l2{
         color: #f1ead8;
         display: block;
-        //padding-left: 10px;
         &:hover{
           background-color: #523322;
         }
@@ -39,11 +40,13 @@
   &_link{
     @include def-link-colors(#ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
     text-decoration: none;
-    font-size: 14px;
-    //font-weight: bold;
+    font-size: 13px;
     display: block;
-    padding: 10px 8px 10px 8px;
+    padding: 15px 8px 15px 8px;
     text-transform: uppercase;
+    font-family: frank;
+    font-weight: normal;
+    line-height: 1;
     &:hover{
       color: #c4a07e;
     }

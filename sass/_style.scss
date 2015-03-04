@@ -21,7 +21,7 @@ html{
 body{
   background: url('../image/bac.jpg') #523322 no-repeat;
   background-size: 100%;
-  font-family: 'Franklin Gothic Book', 'FRABK', sans-serif;
+  font-family: frank, sans-serif;
   //font-family: 'FRABK', sans-serif;
   font-size: 17px;
   color: #523322;
@@ -41,6 +41,12 @@ img{
   width: 100%;
   height: auto;
 }
+h2{
+  font-family: frankcond, sans-serif;
+  color: #523322;
+  font-size: 20px;
+}
+
 .inner{
   max-width: 960px;
   margin: 0 auto;
@@ -59,8 +65,10 @@ button{
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
+  @include def-transition(0.1s);
   &:hover{
     cursor: pointer;
+    background-color: #a48157;
   }
 }
 /**********************************************************/
@@ -72,6 +80,11 @@ button{
 @import "news";
 @import "partners";
 @import "how";
+@import "about";
+@import "contacts";
+@import "info";
+@import "feedback";
+@import "map";
 @import "article";
 @import "mypager";
 @import "slider";

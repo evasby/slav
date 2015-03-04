@@ -8,6 +8,9 @@
     display: inline-block;
     font-size: 14px;
     padding: 0px 4px 0px 4px;
+    float: none;
+    margin-left: 0px;
+    width: auto;
     &__current{
       background-color: #523322;
     }

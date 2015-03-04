@@ -1,4 +1,4 @@
-@font-face {font-family: 'FRABK'; 
+/*@font-face {font-family: 'FRABK'; 
   src: url('fonts/FRABK.eot'); 
   src: local('FRABK'), url('fonts/FRABK.eot?#iefix') format('embedded-opentype'), url('fonts/FRABK.woff') format('woff'),url('fonts/FRABK.ttf') format('truetype'), url('fonts/FRABK.svg#FRABK-Regular') format('svg');}
 
@@ -11,4 +11,17 @@
   src: url('fonts/FRADMCN.eot');
   font-style: normal;
   font-weight: bold; 
+  src: local('FRABK Bold'), url('fonts/FRADMCN.eot?#iefix') format('embedded-opentype'), url('fonts/FRADMCN.woff') format('woff'),url('fonts/FRADMCN.ttf') format('truetype'), url('fonts/FRADMCN.svg#FRABK-Bold') format('svg');}*/
+
+@font-face {font-family: frank; 
+  src: url('fonts/FRABK.eot'); 
+  src: local('FRABK'), url('fonts/FRABK.eot?#iefix') format('embedded-opentype'), url('fonts/FRABK.woff') format('woff'),url('fonts/FRABK.ttf') format('truetype'), url('fonts/FRABK.svg#FRABK-Regular') format('svg');}
+
+@font-face {font-family: frank; 
+  font-style: italic;
+  src: url('fonts/FRABKIT.eot'); 
+  src: local('FRABK Italic'), url('fonts/FRABKIT.eot?#iefix') format('embedded-opentype'), url('fonts/FRABKIT.woff') format('woff'),url('fonts/FRABKIT.ttf') format('truetype'), url('fonts/FRABKIT.svg#FRABK-Italic') format('svg');}
+
+@font-face {font-family: frankcond;
+  src: url('fonts/FRADMCN.eot');
   src: local('FRABK Bold'), url('fonts/FRADMCN.eot?#iefix') format('embedded-opentype'), url('fonts/FRADMCN.woff') format('woff'),url('fonts/FRADMCN.ttf') format('truetype'), url('fonts/FRADMCN.svg#FRABK-Bold') format('svg');}
