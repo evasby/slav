@@ -41,6 +41,8 @@ module.exports = function(grunt) {
                 files: {
                     'css/all.css': 'sass/all.scss',
                     'css/all-old-ie.css': 'sass/all-old-ie.scss',
+                    '../slav-d/sites/all/themes/slav/css/all.css': 'sass/all.scss',
+                    '../slav-d/sites/all/themes/slav/css/all-old-ie.css': 'sass/all-old-ie.scss',
                     /*'C:/OpenServer/domains/alvista-d/sites/all/themes/alvista/css/all.css': 'sass/all.scss',
                     'C:/OpenServer/domains/alvista-d/sites/all/themes/alvista/css/all-old-ie.css': 'sass/all-old-ie.scss'*/
                 }

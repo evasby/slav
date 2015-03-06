@@ -153,11 +153,6 @@ b, strong {
   font-weight: bold;
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
-
 h2 {
   font-family: frankcond, sans-serif;
   color: #523322;
@@ -232,6 +227,59 @@ button:hover {
 }
 .breadcrumb_link:first-child:before {
   display: none;
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+  position: absolute;
+  /*bottom: -30px;
+  width: 100%;*/
+  bottom: 50px;
+  right: 17px;
+}
+
+/* LOADER */
+.bx-wrapper .bx-loading {
+  min-height: 50px;
+  background: url(images/bx_loader.gif) center center no-repeat #fff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+}
+
+/* PAGER */
+.bx-wrapper .bx-pager {
+  text-align: center;
+  font-size: .85em;
+  font-family: Arial;
+  font-weight: bold;
+  color: #666;
+  padding-top: 20px;
+}
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+  background: #fefefe;
+  text-indent: -9999px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  outline: 0;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+  background: #e1be94;
 }
 
 .title {
@@ -347,7 +395,7 @@ button:hover {
 }
 
 .menu {
-  padding: 0px 28px 0px 28px;
+  padding: 0px 22px 0px 22px;
   height: 42px;
   background-color: #523322;
 }
@@ -362,7 +410,10 @@ button:hover {
   position: absolute;
   top: 42px;
   left: 0px;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
   opacity: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   visibility: hidden;
   z-index: 2;
   -webkit-transition: all 0.2s ease-in-out;
@@ -373,7 +424,10 @@ button:hover {
 }
 .menu_item:hover .menu_list__l2 {
   visibility: visible;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
   opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
 .menu_item {
   display: table-cell;
@@ -391,7 +445,7 @@ button:hover {
   text-decoration: none;
   font-size: 13px;
   display: block;
-  padding: 15px 8px 15px 8px;
+  padding: 15px 0px 15px 13px;
   text-transform: uppercase;
   font-family: frank;
   font-weight: normal;
@@ -410,6 +464,21 @@ button:hover {
   color: #ffffff;
 }
 .menu_link:hover {
+  color: #c4a07e;
+}
+.menu_link__active {
+  color: #c4a07e;
+}
+.menu_link__active:visited {
+  color: #c4a07e;
+}
+.menu_link__active:hover {
+  color: #c4a07e;
+}
+.menu_link__active:active {
+  color: #c4a07e;
+}
+.menu_link__active:focus {
   color: #c4a07e;
 }
 .menu_link__l2 {
@@ -535,17 +604,24 @@ button:hover {
 }
 .about_photo {
   overflow: hidden;
+}
+.about_photo img {
   margin-bottom: 30px;
 }
 .about_image {
+  float: left;
+}
+.about_image img {
   width: 241px;
   height: 144px;
-  float: left;
 }
 .about_imagedescr {
   max-width: 590px;
   float: left;
   padding: 5px 0px 0px 30px;
+}
+.about_text {
+  margin-top: -5px;
 }
 .about ul {
   list-style-type: square;
@@ -600,14 +676,14 @@ button:hover {
 }
 
 .feedback {
-  max-width: 285px;
+  width: 285px;
 }
 .feedback_inputwrap {
-  padding-right: 14px;
   margin-bottom: 15px;
 }
 .feedback_inputwrap input {
   display: block;
+  box-sizing: border-box;
   width: 100%;
   height: 31px;
   border: 1px solid #ffffff;
@@ -628,11 +704,11 @@ button:hover {
   border: 1px solid #838482;
 }
 .feedback_textareawrap {
-  padding-right: 14px;
   margin-bottom: 15px;
 }
 .feedback_textareawrap textarea {
   display: block;
+  box-sizing: border-box;
   width: 100%;
   height: 72px;
   border: 1px solid #ffffff;
@@ -683,7 +759,7 @@ button:hover {
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
-  margin: 0 auto;
+  margin: 0px 0px 0px 12px;
   -webkit-transition: 0.1s 0.1s ease-in-out;
   -moz-transition: 0.1s 0.1s ease-in-out;
   -o-transition: 0.1s 0.1s ease-in-out;
@@ -810,7 +886,10 @@ button:hover {
   transition: opacity 0.3s ease-in-out;
 }
 .gallery_item img:hover {
+  -webkit-opacity: 0.4;
+  -moz-opacity: 0.4;
   opacity: 0.4;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   cursor: pointer;
 }
 .gallery_item:last-child {

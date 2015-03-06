@@ -15,12 +15,17 @@
 			height: auto;
 			@include def-transition(opacity, 0.3s);
 			&:hover{
-				opacity: 0.4;
+				@include def-opacity(0.4);
 				cursor: pointer;
 			}
 		}
 		&:last-child{
 			margin-right: 0px;
 		}
+		@include old-ie{
+      &:first-child + * + * + *{
+      	margin-right: 0px;
+      }
+    }
 	}
 }

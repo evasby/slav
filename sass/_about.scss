@@ -12,17 +12,24 @@
   }
   &_photo{
     overflow: hidden;
-    margin-bottom: 30px;
+    img{
+      margin-bottom: 30px;
+    }
   }
   &_image{
-    width: 241px;
-    height: 144px;
     float: left;
+    img{
+      width: 241px;
+      height: 144px;
+    }
   }
   &_imagedescr{
     max-width: 590px;
     float: left;
     padding: 5px 0px 0px 30px;
+  }
+  &_text{
+    margin-top: -5px;
   }
   ul{
     list-style-type: square;

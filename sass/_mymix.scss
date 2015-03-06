@@ -69,6 +69,10 @@
 /*  }*/
 //*********************************************************************************/
 //*********************************************************************************/
+@mixin inline-block{
+  *display:inline; 
+  *zoom: 1;
+}
 @mixin def-border-radius($radius){
   -moz-border-radius: $radius;
   -webkit-border-radius: $radius;
