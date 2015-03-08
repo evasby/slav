@@ -65,7 +65,7 @@ button{
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
-  @include def-transition(0.1s);
+  @include def-transition(background-color, 0.1s);
   &:hover{
     cursor: pointer;
     background-color: #a48157;
@@ -87,6 +87,7 @@ button{
 @import "feedback";
 @import "map";
 @import "article";
+@import "node";
 @import "mypager";
 @import "slider";
 @import "gallery";

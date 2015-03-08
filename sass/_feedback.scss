@@ -13,6 +13,9 @@
       color: #4d4d4d;
       font-size: 16px;
       padding: 0px 0px 0px 12px;
+      &.error{
+        border: 1px solid #ed541d;
+      }
       @include def-transition(0.1s);
       &:hover{
         border: 1px solid #838482;
@@ -36,6 +39,9 @@
       font-size: 16px;
       padding: 0px 0px 0px 12px;
       resize: none;
+      &.error{
+        border: 1px solid #ed541d;
+      }
       @include def-transition(0.1s);
       &:hover{
         border: 1px solid #838482;
@@ -64,6 +70,7 @@
   }
   &_buttonwrap{
     padding-top: 11px;
+    position: relative;
     input{
       display: block;
       border: none;
@@ -81,6 +88,31 @@
         background-color: #a48157;
       }
     }
+    .ajax-progress{
+      position: absolute;
+      top: 14px;
+      left: -15px;
+      .throbber {
+        background: transparent url(../image/ajax-loader.gif) no-repeat 0px 0px !important; /* tweak this according to your gif */
+        float: left;
+        height: 16px; /* tweak this according to your gif */
+        width: 16px; /* tweak this according to your gif */
+      }
+    }
   }
-
+  .messages{
+    background-image: none;
+    margin: 0px 0px 10px 0px;
+    padding: 5px;
+    font-size: 14px;
+    line-height: 1;
+    ul{
+      margin: 0px;
+    }
+    li{
+      font-size: 14px;
+      line-height: 1;
+      margin-bottom: 5px;
+    }
+  }
 }

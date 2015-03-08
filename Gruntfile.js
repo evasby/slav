@@ -1,15 +1,15 @@
 module.exports = function(grunt) {
 
-    // 1. Вся настройка находится здесь
+    // 1. Р’СЃСЏ РЅР°СЃС‚СЂРѕР№РєР° РЅР°С…РѕРґРёС‚СЃСЏ Р·РґРµСЃСЊ
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
         /*concat: {
-            // 2. Настройка для объединения файлов находится тут
+            // 2. РќР°СЃС‚СЂРѕР№РєР° РґР»СЏ РѕР±СЉРµРґРёРЅРµРЅРёСЏ С„Р°Р№Р»РѕРІ РЅР°С…РѕРґРёС‚СЃСЏ С‚СѓС‚
             dist: {
                 src: [
-                    'js/libs/*.js', // Все JS в папке libs
-                    'js/script.js'  // Конкретный файл
+                    'js/libs/*.js', // Р’СЃРµ JS РІ РїР°РїРєРµ libs
+                    'js/script.js'  // РљРѕРЅРєСЂРµС‚РЅС‹Р№ С„Р°Р№Р»
                 ],
                 dest: 'js/build/production.js',
             }
@@ -59,7 +59,7 @@ module.exports = function(grunt) {
                 //src: ['css/all.css', 'css/all-old-ie.css', 'css/all.css.map', 'css/all-old-ie.css.map'],
                 src: ['css/all.css', 'css/all-old-ie.css'],
                 //dest: 'www/slav.webformat.by/sites/all/themes/slav/css',
-                dest: 'www/slav.webformat.by/css',
+                dest: 'www/slavd.webformat.by/sites/all/themes/slav/css',
                 exclusions: ['css/**/.DS_Store', 'css/**/Thumbs.db', 'dist/tmp']
             }
         },
@@ -76,8 +76,8 @@ module.exports = function(grunt) {
         watch: {
             css: {
                 files: ['sass/*.scss'],
-                //tasks: ['sass', 'ftp_upload'],
-                tasks: ['sass'],
+                tasks: ['sass', 'ftp_upload'],
+                //tasks: ['sass'],
                 options: {
                     spawn: false,
                 }
@@ -93,7 +93,7 @@ module.exports = function(grunt) {
 
     });
 
-    // 3. Тут мы указываем Grunt, что хотим использовать этот плагин
+    // 3. РўСѓС‚ РјС‹ СѓРєР°Р·С‹РІР°РµРј Grunt, С‡С‚Рѕ С…РѕС‚РёРј РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ СЌС‚РѕС‚ РїР»Р°РіРёРЅ
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
@@ -102,7 +102,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-ftp-upload');
 
-    // 4. Указываем, какие задачи выполняются, когда мы вводим «grunt» в терминале
+    // 4. РЈРєР°Р·С‹РІР°РµРј, РєР°РєРёРµ Р·Р°РґР°С‡Рё РІС‹РїРѕР»РЅСЏСЋС‚СЃСЏ, РєРѕРіРґР° РјС‹ РІРІРѕРґРёРј В«gruntВ» РІ С‚РµСЂРјРёРЅР°Р»Рµ
     //grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'sass', 'watch']);
     grunt.registerTask('default', ['sass', 'watch']);
 

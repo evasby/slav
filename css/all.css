@@ -175,11 +175,11 @@ button {
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
-  -webkit-transition: 0.1s 0.1s ease-in-out;
-  -moz-transition: 0.1s 0.1s ease-in-out;
-  -o-transition: 0.1s 0.1s ease-in-out;
-  -ms-transition: 0.1s 0.1s ease-in-out;
-  transition: 0.1s 0.1s ease-in-out;
+  -webkit-transition: background-color 0.1s ease-in-out;
+  -moz-transition: background-color 0.1s ease-in-out;
+  -o-transition: background-color 0.1s ease-in-out;
+  -ms-transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
 }
 button:hover {
   cursor: pointer;
@@ -697,6 +697,9 @@ button:hover {
   -ms-transition: 0.1s 0.1s ease-in-out;
   transition: 0.1s 0.1s ease-in-out;
 }
+.feedback_inputwrap input.error {
+  border: 1px solid #ed541d;
+}
 .feedback_inputwrap input:hover {
   border: 1px solid #838482;
 }
@@ -723,6 +726,9 @@ button:hover {
   -ms-transition: 0.1s 0.1s ease-in-out;
   transition: 0.1s 0.1s ease-in-out;
 }
+.feedback_textareawrap textarea.error {
+  border: 1px solid #ed541d;
+}
 .feedback_textareawrap textarea:hover {
   border: 1px solid #838482;
 }
@@ -748,6 +754,7 @@ button:hover {
 }
 .feedback_buttonwrap {
   padding-top: 11px;
+  position: relative;
 }
 .feedback_buttonwrap input {
   display: block;
@@ -770,6 +777,35 @@ button:hover {
   cursor: pointer;
   background-color: #a48157;
 }
+.feedback_buttonwrap .ajax-progress {
+  position: absolute;
+  top: 14px;
+  left: -15px;
+}
+.feedback_buttonwrap .ajax-progress .throbber {
+  background: transparent url(../image/ajax-loader.gif) no-repeat 0px 0px !important;
+  /* tweak this according to your gif */
+  float: left;
+  height: 16px;
+  /* tweak this according to your gif */
+  width: 16px;
+  /* tweak this according to your gif */
+}
+.feedback .messages {
+  background-image: none;
+  margin: 0px 0px 10px 0px;
+  padding: 5px;
+  font-size: 14px;
+  line-height: 1;
+}
+.feedback .messages ul {
+  margin: 0px;
+}
+.feedback .messages li {
+  font-size: 14px;
+  line-height: 1;
+  margin-bottom: 5px;
+}
 
 .map {
   padding: 44px 0px 0px 0px;
@@ -789,9 +825,16 @@ button:hover {
   letter-spacing: 0.5px;
 }
 
+.node-news {
+  padding: 20px 0px 0px 0px;
+}
+
 .news .mypager {
   margin: -9px 0px 0px 0px;
   padding-bottom: 76px;
+}
+.mypager_list {
+  position: relative;
 }
 .mypager_item {
   color: #ffffff;
@@ -824,6 +867,20 @@ button:hover {
 }
 .mypager_item a:hover {
   text-decoration: underline;
+}
+.mypager_item .ajax-progress {
+  position: absolute;
+  top: 2px;
+  left: -25px;
+}
+.mypager_item .ajax-progress .throbber {
+  background: transparent url(../image/ajax-loader.gif) no-repeat 0px 0px !important;
+  /* tweak this according to your gif */
+  float: left;
+  height: 16px;
+  /* tweak this according to your gif */
+  width: 16px;
+  /* tweak this according to your gif */
 }
 
 .slider {
