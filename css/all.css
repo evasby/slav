@@ -101,6 +101,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   src: url("fonts/FRADMCN.eot");
   src: local("FRABK Bold"), url("fonts/FRADMCN.eot?#iefix") format("embedded-opentype"), url("fonts/FRADMCN.woff") format("woff"), url("fonts/FRADMCN.ttf") format("truetype"), url("fonts/FRADMCN.svg#FRABK-Bold") format("svg");
 }
+.hide {
+  display: none;
+}
+
 /**********************************************************/
 /**********************************************************/
 /*@font-face {
@@ -188,6 +192,142 @@ button:hover {
 
 /**********************************************************/
 /**********************************************************/
+.callback_inputwrap {
+  margin-bottom: 15px;
+  padding: 0px 16px 0px 16px;
+}
+.callback_inputwrap input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 31px;
+  border: 1px solid #ffffff;
+  font-family: frankc, sans-serif;
+  color: #4d4d4d;
+  font-size: 16px;
+  padding: 0px 0px 0px 12px;
+  -webkit-transition: 0.1s 0.1s ease-in-out;
+  -moz-transition: 0.1s 0.1s ease-in-out;
+  -o-transition: 0.1s 0.1s ease-in-out;
+  -ms-transition: 0.1s 0.1s ease-in-out;
+  transition: 0.1s 0.1s ease-in-out;
+}
+.callback_inputwrap input.error {
+  border: 1px solid #ed541d;
+}
+.callback_inputwrap input:hover {
+  border: 1px solid #838482;
+}
+.callback_inputwrap input:focus {
+  border: 1px solid #838482;
+}
+.callback_textareawrap {
+  margin-bottom: 15px;
+  padding: 0px 16px 0px 16px;
+}
+.callback_textareawrap textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 72px;
+  border: 1px solid #ffffff;
+  font-family: frankc, sans-serif;
+  color: #4d4d4d;
+  font-size: 16px;
+  padding: 0px 0px 0px 12px;
+  resize: none;
+  -webkit-transition: 0.1s 0.1s ease-in-out;
+  -moz-transition: 0.1s 0.1s ease-in-out;
+  -o-transition: 0.1s 0.1s ease-in-out;
+  -ms-transition: 0.1s 0.1s ease-in-out;
+  transition: 0.1s 0.1s ease-in-out;
+}
+.callback_textareawrap textarea.error {
+  border: 1px solid #ed541d;
+}
+.callback_textareawrap textarea:hover {
+  border: 1px solid #838482;
+}
+.callback_textareawrap textarea:focus {
+  border: 1px solid #838482;
+}
+.callback_label {
+  font-family: frank, sans-serif;
+  color: #4d4d4d;
+  font-size: 16px;
+  padding: 0px 0px 0px 12px;
+}
+.contacts .callback {
+  float: right;
+}
+.callback_title {
+  font-family: frankcond, sans-serif;
+  color: #ffffff;
+  background-color: #523322;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+  margin-bottom: 15px;
+}
+.callback_buttonwrap {
+  padding-top: 11px;
+  position: relative;
+}
+.callback_buttonwrap input {
+  display: block;
+  border: none;
+  width: 147px;
+  height: 31px;
+  background-color: #4d4d4d;
+  color: #f1ead8;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 0px auto;
+  -webkit-transition: 0.1s 0.1s ease-in-out;
+  -moz-transition: 0.1s 0.1s ease-in-out;
+  -o-transition: 0.1s 0.1s ease-in-out;
+  -ms-transition: 0.1s 0.1s ease-in-out;
+  transition: 0.1s 0.1s ease-in-out;
+}
+.callback_buttonwrap input:hover {
+  cursor: pointer;
+  background-color: #a48157;
+}
+.callback_buttonwrap .ajax-progress {
+  position: absolute;
+  top: 14px;
+  left: 40px;
+}
+.callback_buttonwrap .ajax-progress .throbber {
+  background: transparent url(../image/ajax-loader.gif) no-repeat 0px 0px !important;
+  /* tweak this according to your gif */
+  float: left;
+  height: 16px;
+  /* tweak this according to your gif */
+  width: 16px;
+  /* tweak this according to your gif */
+}
+.callback .messages {
+  background-image: none;
+  margin: 0px 0px 10px 0px;
+  padding: 5px;
+  font-size: 14px;
+  line-height: 1;
+}
+.callback .messages ul {
+  margin: 0px;
+}
+.callback .messages li {
+  font-size: 14px;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+.callback_confirmation {
+  text-align: center;
+}
+
 .breadcrumb {
   margin-top: -20px;
   margin-bottom: 25px;
@@ -589,6 +729,40 @@ button:hover {
 }
 .how p {
   margin-bottom: 29px;
+}
+.how_link {
+  display: block;
+  padding: 7px 0px 0px 0px;
+  border: none;
+  width: 147px;
+  height: 24px;
+  background-color: #523322;
+  color: #f1ead8;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-decoration: none;
+  -webkit-transition: background-color 0.1s ease-in-out;
+  -moz-transition: background-color 0.1s ease-in-out;
+  -o-transition: background-color 0.1s ease-in-out;
+  -ms-transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
+}
+.how_link:visited {
+  color: #f1ead8;
+}
+.how_link:hover {
+  color: #f1ead8;
+}
+.how_link:active {
+  color: #f1ead8;
+}
+.how_link:focus {
+  color: #f1ead8;
+}
+.how_link:hover {
+  cursor: pointer;
+  background-color: #a48157;
 }
 
 .about_descr {

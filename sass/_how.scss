@@ -13,4 +13,22 @@
   p{
     margin-bottom: 29px;
   }
+  &_link{
+    display: block;
+    padding: 7px 0px 0px 0px;
+    border: none;
+    width: 147px;
+    height: 24px;
+    background-color: #523322;
+    @include def-link-colors(#f1ead8, #f1ead8, #f1ead8, #f1ead8, #f1ead8);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+    @include def-transition(background-color, 0.1s);
+    &:hover{
+      cursor: pointer;
+      background-color: #a48157;
+    }
+  }
 }
