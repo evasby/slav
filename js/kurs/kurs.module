@@ -1,0 +1,195 @@
+<?php
+
+function kurs_block_info()
+{
+    $blocks['kurs'] = array(
+        'info'  => t('Курс доллара'),
+        'cache' => DRUPAL_CACHE_PER_ROLE, // по умолчанию
+    );
+
+    return $blocks;
+}
+//drupal_write_record('kurs', $что, 'куда');
+//drupal_set_message(t('RSS Feed saved!'));
+
+/*$title = db_select('node', 'n')
+  ->fields('n', array('title'))
+  ->condition('n.nid', 123)
+  ->execute()
+  ->fetchField();*/
+
+/*db_update('node')
+->fields(array('status' => 1))
+->condition('nid', 123)
+->execute();*/
+
+/**
+* Реализуем hook_menu().
+*/
+function kurs_menu() {
+  $items = array();
+
+ 
+$items['admin/config/content/kurs'] = array(
+    'title' => 'Курс доллара',
+    'description' => 'Настройки модуля "Курс доллара"',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('kurs_form'),
+    'access arguments' => array('access administration pages'),
+    'type' => MENU_NORMAL_ITEM,
+  );
+
+  return
+$items;
+} 
+
+/**
+* Функция формы, вызываемая с помощью drupal_get_form()
+* в current_posts_menu().
+*/
+function kurs_form($form, &$form_state) {
+  $form['kurs_max'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Курс'),
+    '#default_value' => variable_get('kurs_cur', 10000),
+    '#size' => 20,
+    '#maxlength' => 5,
+    '#description' => t('Текущий курс доллара'),
+    '#required' => TRUE,
+  );
+
+  return
+system_settings_form($form);
+}
+/*function kurs_contents() {
+  //Получение сегодняшней даты.
+  $today = getdate();
+  //Вычисляем полночь неделю назад.
+  $start_time = mktime(0, 0, 0,$today['mon'],($today['mday'] - 7), $today['year']);
+  //Получаем все публикации за последнюю неделю.
+  $end_time = time();
+
+ 
+//НОВАЯ СТРОКА
+  $max_num = variable_get('kurs_max', 3);
+
+ 
+//Используем Database API для получения текущих публикаций.
+  $query = db_select('node', 'n')
+    ->fields('n', array('nid', 'title', 'created'))
+    ->condition('status', 1) //Опубликовано.
+    ->condition('created', array($start_time, $end_time), 'BETWEEN')
+    ->orderBy('created', 'DESC') //Сначала последние.
+    ->range(0, $max_num) //НОВАЯ СТРОКА
+    ->execute();
+  return $query;
+}*/
+
+$kurs_cur = variable_get('kurs_cur', 10000);
+
+/**
+* Реализация проверки формы Form API.
+*
+* @param $form
+*   Структурированный массив, содержащий элементы и свойства формы.
+* @param $form_state
+*   Массив, который сохраняет информацию о текущем состоянии формы
+*   во время выполнения.
+*/
+function kurs_form_validate($form, &$form_state){
+  $kurs_cur = $form_state['values']['kurs_max'];
+  if (!is_numeric($kurs_cur)){
+    form_set_error('kurs_max', t('Вы должны ввести цифровое значение.'));
+  }
+  else if ($kurs_cur <= 0){
+    form_set_error('kurs_max', t('Значение может быть только положительным.'));     
+  }
+  else if ($kurs_cur < 1000){
+    form_set_error('kurs_max', t('Вы серьёзно?'));     
+  }
+}
+
+
+//http://azbukaweb.ru/generating-block-content
+/*function kurs_theme() {
+  return array(
+    'comment_form' => array( // id формы
+      'render element' => 'form',
+      'template' => 'comment-form', // имя файла шаблона будет comment-form.tpl.php
+    ),
+  );
+} */
+/*function kurs_views_api() {
+  return array('api' => 3);
+}*/
+
+/*function kurs_better_exposed_filters_settings_alter(&$settings) {
+  // Set the min/max value of a slider.
+  dpm($settings);
+  $settings['field_price_value']['slider_options']['bef_slider_min'] = 500;
+  $settings['field_price_value']['slider_options']['bef_slider_max'] = 5000;
+}*/
+
+
+//function kurs_form_views_exposed_form_alter(&$form, &$form_state, $form_id) {
+  //$view = $form_state['view'];
+  //unset($form['field_tapes_base_value_selective']);
+  //$form['#info']['filter-field_tapes_base_value_selective'] = false;
+  
+  //$form['field_tapes_base_value_selective']['#type'] = 'hidden';
+  //$form['field_tapes_base_value_selective']['#access'] = 'FALSE';
+  //dpm($form);
+  /*if ($view->name == 'list' && $view->current_display == 'page') {
+    
+    if (empty($view->total_rows)) {
+      $form['#access'] = FALSE;
+    }
+  }*/
+//}
+function kurs_views_pre_render(&$view) {
+  if ($view->name == 'list' && $view->current_display == 'page') {
+    /*$view->filter['field_tapes_base_value_selective'] = false;*/
+    //dpm($view->filter['field_tapes_base_value_selective']->query);
+    /*dpm($view->filter['field_tapes_glue_value_selective']);*/
+    //$view->exposed_widgets = false;
+    //unset($view->filter['field_tapes_base_value_selective']);
+    //dpm($view->filter['field_tapes_base_value_selective']);
+    //dpm($view->filter['field_tapes_glue_value_selective']);
+    //dpm($view->filter['field_tapes_thickness_value_selective']);
+    /*if (empty($view->result) && empty($view->exposed_input)) {
+      $view->exposed_widgets = NULL;
+    }*/
+    //unset($view->filter['field_tapes_base_value_selective']);
+    //unset($view->exposed_raw_input['field_tapes_base_value_selective']);
+  }
+}
+
+
+/**
+ * Implements hook_form_alter().
+ */
+//function kurs_form_alter(&$form, $form_state, $form_id) {
+  //dpm($form);
+  //if($form_id == 'views_exposed_form' && $form['#id'] == 'views-exposed-form-list-page') {
+    /*$tid = isset($form['#parameters'][1]['view']->args[0]) ? $form['#parameters'][1]['view']->args[0] : false;
+    if($tid) {
+      $tids = array($tid);
+      $tree = taxonomy_get_tree(1, $tid);
+      if($tree) {
+        foreach($tree as $term) { $tids[] = $term->tid; }
+      }
+      $tids_text = implode(', ', $tids);
+      $query = db_query("SELECT p.field_manufacturer_value FROM {term_node} n LEFT JOIN {content_type_product} p ON n.nid = p.nid WHERE tid IN (".$tids_text.")");
+      $manuf = array();
+      while($row = db_fetch_object($query)) {
+        if($row->field_manufacturer_value) $manuf[$row->field_manufacturer_value] = $row->field_manufacturer_value;
+      }
+      if(count($form['field_manufacturer_value']['#options'])) {
+        foreach($form['field_manufacturer_value']['#options'] as $ind => $name) {
+          if(!isset($manuf[$ind])) unset($form['field_manufacturer_value']['#options'][$ind]);
+        }
+      }
+    }*/
+
+  //}
+//}

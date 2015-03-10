@@ -1,0 +1,7 @@
+name = tech
+description = tech
+package = «System»
+core = 7.x
+version = «7.x-1.0»
+configure = admin/config/content/kurs
+files[]= kurs.module
