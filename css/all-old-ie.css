@@ -193,6 +193,10 @@ button:hover {
 
 /**********************************************************/
 /**********************************************************/
+.callback {
+  width: 296px;
+  height: 326px;
+}
 .callback_inputwrap {
   margin-bottom: 15px;
   padding: 0px 16px 0px 16px;
@@ -329,6 +333,198 @@ button:hover {
   text-align: center;
 }
 
+.comm {
+  width: 375px;
+  height: 388px;
+}
+.comm_inputwrap {
+  margin-bottom: 15px;
+  padding: 0px 30px 0px 30px;
+}
+.comm_inputwrap input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 31px;
+  border: 1px solid #ffffff;
+  font-family: frankc, sans-serif;
+  color: #4d4d4d;
+  font-size: 16px;
+  padding: 0px 0px 0px 12px;
+  -webkit-transition: 0.1s 0.1s ease-in-out;
+  -moz-transition: 0.1s 0.1s ease-in-out;
+  -o-transition: 0.1s 0.1s ease-in-out;
+  -ms-transition: 0.1s 0.1s ease-in-out;
+  transition: 0.1s 0.1s ease-in-out;
+}
+.comm_inputwrap input.error {
+  border: 1px solid #ed541d;
+}
+.comm_inputwrap input:hover {
+  border: 1px solid #838482;
+}
+.comm_inputwrap input:focus {
+  border: 1px solid #838482;
+}
+.comm_textareawrap {
+  margin-bottom: 15px;
+  padding: 0px 30px 0px 30px;
+}
+.comm_textareawrap textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 72px;
+  border: 1px solid #ffffff;
+  font-family: frankc, sans-serif;
+  color: #4d4d4d;
+  font-size: 16px;
+  padding: 0px 0px 0px 12px;
+  resize: none;
+  -webkit-transition: 0.1s 0.1s ease-in-out;
+  -moz-transition: 0.1s 0.1s ease-in-out;
+  -o-transition: 0.1s 0.1s ease-in-out;
+  -ms-transition: 0.1s 0.1s ease-in-out;
+  transition: 0.1s 0.1s ease-in-out;
+}
+.comm_textareawrap textarea.error {
+  border: 1px solid #ed541d;
+}
+.comm_textareawrap textarea:hover {
+  border: 1px solid #838482;
+}
+.comm_textareawrap textarea:focus {
+  border: 1px solid #838482;
+}
+.comm_label {
+  font-family: frank, sans-serif;
+  color: #4d4d4d;
+  font-size: 16px;
+  padding: 0px 0px 5px 12px;
+}
+.contacts .comm {
+  float: right;
+}
+.comm_title {
+  font-family: frankcond, sans-serif;
+  color: #ffffff;
+  background-color: #523322;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 10px 0px 10px 30px;
+  margin-bottom: 15px;
+}
+.comm_descr {
+  color: #4d4d4d;
+  font-size: 13px;
+  padding: 5px 30px 15px 30px;
+}
+.comm_buttonwrap {
+  padding-top: 11px;
+  position: relative;
+}
+.comm_buttonwrap input {
+  display: block;
+  border: none;
+  width: 147px;
+  height: 31px;
+  background-color: #4d4d4d;
+  color: #f1ead8;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 0px auto;
+  -webkit-transition: 0.1s 0.1s ease-in-out;
+  -moz-transition: 0.1s 0.1s ease-in-out;
+  -o-transition: 0.1s 0.1s ease-in-out;
+  -ms-transition: 0.1s 0.1s ease-in-out;
+  transition: 0.1s 0.1s ease-in-out;
+}
+.comm_buttonwrap input:hover {
+  cursor: pointer;
+  background-color: #a48157;
+}
+.comm_buttonwrap .ajax-progress {
+  position: absolute;
+  top: 14px;
+  left: 80px;
+}
+.comm_buttonwrap .ajax-progress .throbber {
+  background: transparent url(../image/ajax-loader.gif) no-repeat 0px 0px !important;
+  /* tweak this according to your gif */
+  float: left;
+  height: 16px;
+  /* tweak this according to your gif */
+  width: 16px;
+  /* tweak this according to your gif */
+}
+.comm .messages {
+  background-image: none;
+  margin: 0px 0px 10px 0px;
+  padding: 5px;
+  font-size: 14px;
+  line-height: 1;
+}
+.comm .messages ul {
+  margin: 0px;
+}
+.comm .messages li {
+  font-size: 14px;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+.comm_confirmation {
+  text-align: center;
+}
+
+.object_title {
+  font-family: frankcond, sans-serif;
+  color: #ffffff;
+  background-color: #523322;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: left;
+  height: 45px;
+  margin-bottom: 15px;
+}
+.object_head {
+  color: #595957;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-family: frankcond;
+  padding: 0px 0px 15px 0px;
+}
+.object_inner {
+  overflow: hidden;
+}
+.object_image {
+  float: right;
+  padding: 40px 50px 60px 0px;
+}
+.object_text {
+  float: left;
+  padding: 85px 160px 0px 50px;
+}
+.object ul {
+  list-style-type: square;
+  list-style-position: inside;
+}
+.object li {
+  color: #595957;
+  font-size: 17px;
+}
+.object_link {
+  display: block;
+  width: 247px;
+  height: 52px;
+  margin: 60px 0px 60px 0px;
+  background: url(../image/getcomm.jpg) no-repeat;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
 .breadcrumb {
   margin-top: -20px;
   margin-bottom: 25px;
@@ -370,13 +566,18 @@ button:hover {
   display: none;
 }
 
+.bx-wrapper {
+  position: relative;
+  height: 236px;
+}
+
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
   position: absolute;
   /*bottom: -30px;
   width: 100%;*/
-  bottom: 50px;
-  right: 17px;
+  bottom: 0px;
+  right: -30px;
 }
 
 /* LOADER */

@@ -1,10 +1,10 @@
-.callback{
-  width: 296px;
-  height: 326px;
+.comm{
+  width: 375px;
+  height: 388px;
   &_inputwrap{
     //padding-right: 14px;
     margin-bottom: 15px;
-    padding: 0px 16px 0px 16px;
+    padding: 0px 30px 0px 30px;
     input{
       display: block;
       box-sizing: border-box;
@@ -30,7 +30,7 @@
   &_textareawrap{
     //padding-right: 14px;
     margin-bottom: 15px;
-    padding: 0px 16px 0px 16px;
+    padding: 0px 30px 0px 30px;
     textarea{
       display: block;
       box-sizing: border-box;
@@ -58,7 +58,7 @@
     font-family: frank, sans-serif;
     color: #4d4d4d;
     font-size: 16px;
-    padding: 0px 0px 0px 12px;
+    padding: 0px 0px 5px 12px;
   }
   .contacts &{
     float: right;
@@ -69,9 +69,14 @@
     background-color: #523322;
     font-size: 20px;
     text-transform: uppercase;
-    text-align: center;
-    padding: 10px 0px 10px 0px;
+    text-align: left;
+    padding: 10px 0px 10px 30px;
     margin-bottom: 15px;
+  }
+  &_descr{
+    color: #4d4d4d;
+    font-size: 13px;
+    padding: 5px 30px 15px 30px;
   }
   &_buttonwrap{
     padding-top: 11px;
@@ -96,7 +101,7 @@
     .ajax-progress{
       position: absolute;
       top: 14px;
-      left: 40px;
+      left: 80px;
       .throbber {
         background: transparent url(../image/ajax-loader.gif) no-repeat 0px 0px !important; /* tweak this according to your gif */
         float: left;
