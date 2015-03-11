@@ -332,6 +332,11 @@ button:hover {
 .callback_confirmation {
   text-align: center;
 }
+.callback_descr {
+  color: #4d4d4d;
+  font-size: 13px;
+  padding: 5px 30px 15px 30px;
+}
 
 .comm {
   width: 375px;
@@ -499,12 +504,13 @@ button:hover {
   overflow: hidden;
 }
 .object_image {
-  float: right;
+  float: left;
   padding: 40px 50px 60px 0px;
 }
 .object_text {
   float: left;
-  padding: 85px 160px 0px 50px;
+  width: 300px;
+  padding: 85px 0px 0px 50px;
 }
 .object ul {
   list-style-type: square;
@@ -699,6 +705,9 @@ button:hover {
   background-position: -57px 0;
   bottom: 1px;
   left: -6px;
+}
+.header_phone p {
+  margin-bottom: 0px;
 }
 .header_phone a {
   display: block;
@@ -1193,6 +1202,10 @@ button:hover {
   padding: 20px 0px 0px 0px;
 }
 
+.mynode {
+  padding: 15px 15px 0px 15px;
+}
+
 .news .mypager {
   margin: -9px 0px 0px 0px;
   padding-bottom: 76px;
@@ -1320,6 +1333,43 @@ button:hover {
   margin-right: 0px;
 }
 
+.gallerynode {
+  overflow: hidden;
+  padding: 15px 0px 85px 15px;
+  position: relative;
+}
+.gallerynode_item {
+  width: 194px;
+  height: 121px;
+  background: url(../image/view.png) #49352a no-repeat;
+  background-position: 50% 50%;
+  float: left;
+  margin-right: 25px;
+}
+.gallerynode_item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+.gallerynode_item img:hover {
+  -webkit-opacity: 0.4;
+  -moz-opacity: 0.4;
+  opacity: 0.4;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  cursor: pointer;
+}
+.gallerynode_item:last-child {
+  margin-right: 0px;
+}
+.gallerynode_item:first-child + * + * + * {
+  margin-right: 0px;
+}
+
 .quote {
   padding: 25px 125px 30px 125px;
   font-size: 20px;
@@ -1405,9 +1455,16 @@ button:hover {
   padding-left: 30px;
   margin-bottom: 7px;
 }
+.footer_address p {
+  margin-bottom: 0px;
+}
 .footer_skype {
   position: relative;
   padding-left: 30px;
+}
+.footer_skype p {
+  display: inline;
+  margin-bottom: 0px;
 }
 .footer_icon {
   width: 19px;

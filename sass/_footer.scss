@@ -46,10 +46,17 @@
     position: relative;
     padding-left: 30px;
     margin-bottom: 7px;
+    p{
+      margin-bottom: 0px;
+    }
   }
   &_skype{
     position: relative;
     padding-left: 30px;
+    p{
+      display: inline;
+      margin-bottom: 0px;
+    }
   }
   &_icon{
     width: 19px;
