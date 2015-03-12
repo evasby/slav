@@ -1244,6 +1244,75 @@ button:hover {
   color: #666666;
   font-size: 80px;
 }
+.siteerror_inner {
+  overflow: hidden;
+}
+.siteerror_left {
+  float: left;
+  width: 640px;
+  color: #666666;
+}
+.siteerror_left ul {
+  list-style-type: square;
+  list-style-position: inside;
+  padding-left: 10px;
+}
+.siteerror_left li {
+  display: list-item;
+  color: #666666;
+  padding-left: 5px;
+}
+.siteerror_right {
+  float: left;
+  width: 170px;
+  padding-left: 70px;
+}
+.siteerror_right ul {
+  display: block;
+  list-style-type: square;
+  list-style-position: outside;
+  margin-left: 10px;
+}
+.siteerror_right .menu_list__l2 {
+  display: none;
+}
+.siteerror_right li {
+  display: list-item;
+}
+.siteerror_right a, .siteerror_right .menu_link {
+  color: #ffffff;
+  color: #523322;
+  padding: 0px;
+  text-transform: none;
+  display: block;
+  font-family: frank;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1;
+  text-decoration: none;
+  display: inline;
+}
+.siteerror_right a:visited, .siteerror_right .menu_link:visited {
+  color: #523322;
+}
+.siteerror_right a:hover, .siteerror_right .menu_link:hover {
+  color: #666666;
+}
+.siteerror_right a:active, .siteerror_right .menu_link:active {
+  color: #523322;
+}
+.siteerror_right a:focus, .siteerror_right .menu_link:focus {
+  color: #523322;
+}
+.siteerror_right a:hover, .siteerror_right .menu_link:hover {
+  text-decoration: underline;
+}
+.siteerror_head {
+  font-family: frank;
+  font-size: 18px;
+  color: #523322;
+  margin-bottom: 14px;
+}
 
 .node-news {
   padding: 20px 0px 0px 0px;
