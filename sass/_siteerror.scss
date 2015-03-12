@@ -1,0 +1,19 @@
+.siteerror{
+  margin-top: 75px;
+  background-color: #f1ead8;
+  padding: 30px 35px 35px 35px;
+  -webkit-box-shadow: 0px 0px 160px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 160px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 160px 0px rgba(0,0,0,0.75);
+  position: relative;
+  z-index: 1;
+  &_text{
+    padding: 32px 15px 0px 15px;
+    letter-spacing: 0.5px;
+  }
+  h1{
+    font-family: frankcond;
+    color: #666666;
+    font-size: 80px;
+  }
+}

@@ -1,34 +1,35 @@
 .breadcrumb{
   margin-top:-20px;
-  margin-bottom: 25px;
+  margin-bottom: 16px;
   &_item{
     font-size: 13px;
-    color: #81817e;
-    margin-left: 7px;
+    color: #4d4d4d;
+    margin-left: 10px;
     position: relative;
     &:before{
-      background: url("../image/arrow.gif") no-repeat;
+      background: url("../image/bread.gif") no-repeat;
       content: "";
       display: inline-block;
       height: 9px;
       width: 5px;
       position: absolute;
       left: -7px;
-      top: 5px;
+      top: 4px;
     }
   }
   &_link{
     position: relative;
-    margin-left: 7px;
+    margin-left: 10px;
+    @include def-link-colors(#4d4d4d, #523322, #4d4d4d, #4d4d4d, #4d4d4d);
     &:before{
-      background: url("../image/arrow.gif") no-repeat;
+      background: url("../image/bread.gif") no-repeat;
       content: "";
       display: inline-block;
       height: 9px;
       width: 5px;
       position: absolute;
       left: -7px;
-      top: 5px;
+      top: 4px;
     }
     &:first-child{
       margin: 0px;
