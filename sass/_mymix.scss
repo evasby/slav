@@ -53,20 +53,20 @@
   }
 }
 //*********************************************************************************/
-/*  #hack{
-      color:red; /* All browsers */
-/*    color:red !important;/* All browsers but IE6 */
-/*    _color:red; /* Only works in IE6 */
-/*    *color:red; /* IE6, IE7 */
-/*    +color:red;/* Only works in IE7*/
-/*    *+color:red; /* Only works in IE7 */
-/*    color:red\9; /* IE6, IE7, IE8, IE9 */
-/*    color:red\0; /* IE8, IE9 */
-/*    color:red\9\0;/*Only works in IE9*/
-/*   }
-/*  . ie10 #hack{
-      color:red; /* Only works in IE10 */
-/*  }*/
+//  #hack{
+//      color:red; // All browsers
+//    color:red !important;/* All browsers but IE6
+//    _color:red; // Only works in IE6
+//    *color:red; // IE6, IE7
+//    +color:red; // Only works in IE7
+//    *+color:red; // Only works in IE7
+//    color:red\9; // IE6, IE7, IE8, IE9
+//    color:red\0; // IE8, IE9
+//    color:red\9\0; //Only works in IE9
+//   }
+//  . ie10 #hack{
+//      color:red; // Only works in IE10
+//  }
 //*********************************************************************************/
 //*********************************************************************************/
 @mixin inline-block{
@@ -123,7 +123,7 @@
   }
   * html & { height: 1px }
 }
-/* слегка доработанный, универсальный clearfix хак */
+// слегка доработанный, универсальный clearfix хак
 @mixin def-clearfix2 {
   &:after {
     visibility: hidden;
@@ -134,10 +134,10 @@
     height: 0;
   }
   display: inline-block;
-  /* start commented backslash hack \*/
+  // start commented backslash hack
   * html & { height: 1%; }
   display: block;
-  /* close commented backslash hack */
+  // close commented backslash hack
 }
 //*********************************************************************************/
 @mixin def-box-shadow($top, $left, $blur, $color, $inset: false) {

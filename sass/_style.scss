@@ -1,20 +1,19 @@
 ﻿@import "mymix";
 @import "fonts";
 @import "hide";
-/**********************************************************/
-/**********************************************************/
-/*@font-face {
-    font-family: 'open_sanslight';
-    src: url('../font/opensanslight.eot');
-    src: url('../font/opensanslight.eot?#iefix') format('embedded-opentype'),
-         url('../font/opensanslight.woff2') format('woff2'),
-         url('../font/opensanslight.woff') format('woff'),
-         url('../font/opensanslight.ttf') format('truetype'),
-         url('../font/opensanslight.svg#open_sanslight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}*/
+//**********************************************************/
+//**********************************************************/
+//@font-face {
+//    font-family: 'open_sanslight';
+//    src: url('../font/opensanslight.eot');
+//    src: url('../font/opensanslight.eot?#iefix') format('embedded-opentype'),
+//         url('../font/opensanslight.woff2') format('woff2'),
+//         url('../font/opensanslight.woff') format('woff'),
+//         url('../font/opensanslight.ttf') format('truetype'),
+//         url('../font/opensanslight.svg#open_sanslight') format('svg');
+//    font-weight: normal;
+//    font-style: normal;
+//}
 html{
   min-width: 960px;
 }
@@ -31,6 +30,9 @@ body{
 a{
   font-size: 13px;
   @include def-link-colors(#81817e, #523322, #81817e, #81817e, #81817e);
+}
+a:focus {
+  outline: none;
 }
 p{
   margin-bottom: 19px;
@@ -72,8 +74,8 @@ button{
     background-color: #a48157;
   }
 }
-/**********************************************************/
-/**********************************************************/
+//**********************************************************/
+//**********************************************************/
 @import "callback";
 @import "comm";
 @import "object";

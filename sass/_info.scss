@@ -19,6 +19,11 @@
     margin-bottom: 40px;
     position: relative;
     padding: 0px 0px 0px 32px;
+    a{
+      @include def-link-colors(#523322, #523322, #523322, #523322, #523322);
+      font-size: 17px;
+      text-decoration: none;
+    }
   }
   &_icon{
     width: 20px;

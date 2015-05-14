@@ -13,7 +13,7 @@
   }
   &_contacts{
     float: left;
-    margin: 50px 0px 0px 275px;
+    margin: 50px 0px 0px 200px;
   }
   &_logo{
     margin: 39px 0px 47px 37px;
@@ -36,6 +36,7 @@
     padding: 10px 0px 0px 30px;
     line-height: 1.3;
     position: relative;
+    width: 250px;
   }
   &_wrap{
     float: left;
@@ -45,7 +46,7 @@
   &_address{
     position: relative;
     padding-left: 30px;
-    margin-bottom: 7px;
+    margin-bottom: 2px;
     p{
       margin-bottom: 0px;
     }
@@ -53,9 +54,23 @@
   &_skype{
     position: relative;
     padding-left: 30px;
+    margin-bottom: 2px;
     p{
       display: inline;
       margin-bottom: 0px;
+    }
+  }
+  &_email{
+    position: relative;
+    padding-left: 30px;
+    p{
+      display: inline;
+      margin-bottom: 0px;
+    }
+    a{
+      @include def-link-colors(#f1ead8, #f1ead8, #f1ead8, #f1ead8, #f1ead8);
+      font-size: 17px;
+      text-decoration: none;
     }
   }
   &_icon{
