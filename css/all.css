@@ -661,9 +661,9 @@ button:hover {
 }
 .header_phone {
   padding-top: 20px;
-  width: 180px;
+  width: 240px;
   float: left;
-  margin-left: 130px;
+  margin-left: 105px;
   color: #ffffff;
   text-transform: uppercase;
   line-height: 1.2;
@@ -684,7 +684,7 @@ button:hover {
 }
 .header_phone a {
   display: block;
-  padding: 40px 0px 0px 15px;
+  padding: 20px 0px 0px 15px;
   color: #c4a07e;
   color: #c4a07e;
   text-decoration: none;
